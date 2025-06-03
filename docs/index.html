@@ -12,15 +12,48 @@
 
 <body>
     <div id="atkspd_input">
+        <div>Evil Calculator</div>
+        <hr>
+
         <div>Hunter Type</div>
         <div>
             <select id="hunter_type" onchange="evil_calc()">
                 <option value="4">Berserker</option>
                 <option value="1">Ranger</option>
                 <option value="1">Sorcerer</option>
-                <option value="1" selected>Paladin</option>
+                <option value="1">Paladin</option>
             </select>
         </div>
+        <hr>
+
+        <div>Equipment Infomation</div>
+        <div>
+            <div>Weapon</div>
+            <div>ATK<input></div>
+            <div>ATKSPD<input></div>
+            <div>
+                <select><option>None</option></select>
+                <select><option>0</option></select>
+            </div>
+            <div>
+                <select><option>None</option></select>
+                <select><option>0</option></select>
+            </div>
+            <div>
+                <select><option>None</option></select>
+                <select><option>0</option></select>
+            </div>
+            <div>
+                <select><option>None</option></select>
+                <select><option>0</option></select>
+            </div>
+        </div>
+        <hr>
+
+        <div>Properties</div>
+        <hr>
+
+
         <div>Weapon ATKSPD</div>
         <div><input type="text" id="atkspd_weapon" value="2.4" onblur="evil_calc()"></div>
         <div>Expected ATKSPD</div>
