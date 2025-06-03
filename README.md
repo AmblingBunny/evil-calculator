@@ -1,7 +1,10 @@
 # Evil-Calculator
+
 ## Description
-This repository is used to do some calculation for the game Evil Hunter Tycoon.
+This repository is used to do some calculation for the game [**Evil Hunter Tycoon**](https://play.google.com/store/apps/details?id=com.superplanet.evilhunter&pli=1).
+
 Function includes properties calculation, enhancement stone cost estimation, buff-building upgrade cost estimation, etc.
+
 ## To do list
 - [ ] Hunter edit: edit hunter's equipments, characteristic, properties at will
 - [ ] Properties calculation, including:
