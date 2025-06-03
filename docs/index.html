@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>evil-evil_calculator</title>
+
+    <script src="./src/calc.js"></script>
+</head>
+
+<body>
+    <div id="atkspd_input">
+        <div>Hunter Type</div>
+        <div>
+            <select id="hunter_type" onchange="evil_calc()">
+                <option value="4">Berserker</option>
+                <option value="1">Ranger</option>
+                <option value="1">Sorcerer</option>
+                <option value="1" selected>Paladin</option>
+            </select>
+        </div>
+        <div>Weapon ATKSPD</div>
+        <div><input type="text" id="atkspd_weapon" value="2.4" onblur="evil_calc()"></div>
+        <div>Expected ATKSPD</div>
+        <div><input type="text" id="atkspd_expected" value="0.25" onblur="evil_calc()"></div>
+        <div>Quicken Level</div>
+        <div><input type="number" id="quicken_level" min="0" max="5" value="0" onchange="evil_calc()"></div>
+        <div>Characteristic</div>
+        <div>
+            <select class="atkspd_bonus" onchange="evil_calc()">
+                <option value="0" selected>None +0%</option>
+                <option value="7">Heroic +7%</option>
+                <option value="10">Swift +10%</option>
+                <option value="-10">Thickheaded -10%</option>
+            </select>
+        </div>
+        <div>Attribute</div>
+        <div>
+            <select class="atkspd_bonus" onchange="evil_calc()">
+                <option value="0">Normal +0%</option>
+                <option value="10">Rare +10%</option>
+                <option value="20" selected>Legendary +20%</option>
+                <option value="30">Ultimate +30%</option>
+            </select>
+        </div>
+        <div>Equipment</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Secret Tech</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Guild</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Rune</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+    </div>
+    <div id="Result">
+        <p>ATKSPD: 0</p><p>Need: 0%</p>
+    </div>
+
+<script>
+    evil_calc()
+</script>
+
+</body>
+
+</html>
