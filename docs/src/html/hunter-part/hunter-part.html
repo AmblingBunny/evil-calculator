@@ -1,0 +1,55 @@
+<script src="/docs/src/js/func.js"></script>
+<div id="hunter-title">
+    <h2>
+        Hunter Information
+    </h2>
+</div>
+<div id="hunter-characteristic">
+    <select id="hunter-characteristic-select">
+        <option value="Unknown">Unknown</option>
+    </select>
+</div>
+<div id="hunter-name">
+    <input type="text" placeholder="Name" value="Name">
+</div>
+<div id="hunter-type">
+    <select id="hunter-type-basic" onchange="hunter_type_change(this)">
+        <option value="Berserker">Berserker</option>
+        <option value="Ranger">Ranger</option>
+        <option value="Sorcerer">Sorcerer</option>
+        <option value="Paladin">Paladin</option>
+    </select>
+    <select id="hunter-type-2nd" onchange="">
+        <option value="None">None</option>
+        <option value="Duelist">Duelist</option>
+        <option value="Slayer">Slayer</option>
+        <option value="Warrior">Warrior</option>
+    </select>
+    <select id="hunter-type-3rd" onchange="">
+        <option value="None">None</option>
+        <option value="Barbarian">Barbarian</option>
+        <option value="SwordSaint">SwordSaint</option>
+        <option value="Destoyer">Destoyer</option>
+    </select>
+</div>
+<div id="hunter-pannel">
+    <div id="hunter-pannel-hp">HP</div>
+    <div id="hunter-pannel-satiety">Satiety</div>
+    <div id="hunter-pannel-mood">Mood</div>
+    <div id="hunter-pannel-stamina">Stamina</div>
+    <div id="hunter-pannel-atk">ATK</div>
+    <div id="hunter-pannel-def">DEF</div>
+    <div id="hunter-pannel-crit">CRIT</div>
+    <div id="hunter-pannel-atkspd">ATK SPD</div>
+    <div id="hunter-pannel-evasion">Evasion</div>
+</div>
+<div id="hunter-select">
+    <button id="hunter-select-equipment" onclick="hunter_select_click(this)">Equipment</button>
+    <button id="hunter-select-skill" onclick="hunter_select_click(this)">Skill</button>
+    <button id="hunter-select-technique" onclick="hunter_select_click(this)">Technique</button>
+    <button id="hunter-select-mount" onclick="hunter_select_click(this)">Mount</button>
+</div>
+<div id="hunter-content">
+    <iframe src="/docs/src/html/hunter-part/hunter-select-equipment.html" frameborder="1" width="580"
+        height="300"></iframe>
+</div>

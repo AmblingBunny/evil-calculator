@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>evil-calculator</title>
+
+    <script src="./src/js/func.js"></script>
+</head>
+
+<body>
+    <div id="atkspd_input">
+        <div>Evil Calculator</div>
+        <hr>
+
+        <div>Hunter Type</div>
+        <div>
+            <select id="hunter_type" onchange="evil_calc()">
+                <option value="4">Berserker</option>
+                <option value="1">Ranger</option>
+                <option value="1">Sorcerer</option>
+                <option value="1">Paladin</option>
+            </select>
+        </div>
+        <hr>
+
+        <div>Equipment Infomation</div>
+        <div>
+            <div style="display: inline-block;">
+                <div>Weapon +<input type="number" value="0" min="0" max="25"></div>
+                <div>ATK<input></div>
+                <div>ATKSPD<input></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Gloves +<input type="number" value="0" min="0" max="25"></div>
+                <div>DEF<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Armor +<input type="number" value="0" min="0" max="25"></div>
+                <div>DEF<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Shoes +<input type="number" value="0" min="0" max="25"></div>
+                <div>DEF<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Hat +<input type="number" value="0" min="0" max="25"></div>
+                <div>DEF<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Necklace +<input type="number" value="0" min="0" max="25"></div>
+                <div>HP<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Ring +<input type="number" value="0" min="0" max="25"></div>
+                <div>HP<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+            <div style="display: inline-block;">
+                <div>Belt +<input type="number" value="0" min="0" max="25"></div>
+                <div>HP<input></div>
+                <div>---</div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+                <div><select>
+                        <option>None</option>
+                    </select><select>
+                        <option>0</option>
+                    </select></div>
+            </div>
+        </div>
+        <hr>
+
+        <div>Properties</div>
+        <div>
+            <div>HP</div>
+            <div>Satiety</div>
+            <div>Mood</div>
+            <div>Stamina</div>
+            <div>ATK</div>
+            <div>DEF</div>
+            <div>CRIT</div>
+            <div>ATK SPD</div>
+            <div>Evasion</div>
+        </div>
+        <hr>
+
+        <div>Skill</div>
+        <div>
+            <div>Basic Skill</div>
+            <div>2nd Skill</div>
+            <div>3rd Skill</div>
+            <div>Trait</div>
+        </div>
+        <hr>
+
+        <div>Secret Tech</div>
+        <div>
+            <div>Secret Tech 123</div>
+        </div>
+        <hr>
+
+        <div>Riding Pet</div>
+        <div>
+            <div>Riding Pet 123</div>
+        </div>
+        <hr>
+
+        <div>Weapon ATKSPD</div>
+        <div><input type="text" id="atkspd_weapon" value="2.4" onblur="evil_calc()"></div>
+        <div>Expected ATKSPD</div>
+        <div><input type="text" id="atkspd_expected" value="0.25" onblur="evil_calc()"></div>
+        <div>Quicken Level</div>
+        <div><input type="number" id="quicken_level" min="0" max="5" value="0" onchange="evil_calc()"></div>
+        <div>Characteristic</div>
+        <div>
+            <select class="atkspd_bonus" onchange="evil_calc()">
+                <option value="0" selected>None +0%</option>
+                <option value="7">Heroic +7%</option>
+                <option value="10">Swift +10%</option>
+                <option value="-10">Thickheaded -10%</option>
+            </select>
+        </div>
+        <div>Attribute</div>
+        <div>
+            <select class="atkspd_bonus" onchange="evil_calc()">
+                <option value="0" selected>Normal +0%</option>
+                <option value="10">High +10%</option>
+                <option value="20">Highest +20%</option>
+                <option value="30">Ultimate +30%</option>
+            </select>
+        </div>
+        <div>Equipment</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Secret Tech</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Guild</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+        <div>Rune</div>
+        <div><input type="text" class="atkspd_bonus" value="0" onblur="evil_calc()">%</div>
+    </div>
+    <div id="Result">
+        <p>ATKSPD: 0</p>
+        <p>Need: 0%</p>
+    </div>
+
+    <script>
+        evil_calc()
+    </script>
+
+</body>
+
+</html>
